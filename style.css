@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet');
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg,
+      rgba(2, 0, 36, 0.4) 0%,
+      rgba(42, 192, 210, 0.4) 4%,
+      rgba(0, 212, 255, 0.4) 100%),
+    url(img/inter.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  min-height: 2000px;
+}
+
+h1,
+p {
+  text-align: center;
+  color: white;
+}
+
+form {
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: white;
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 25px;
+  display: block;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select,
+textarea {
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: 0px;
+  padding: 5px;
+  font-family: inherit;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(50, 255, 228);
+  border: 0;
+  border-radius: 5px;
+}

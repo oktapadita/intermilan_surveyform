@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Interisti Fans Survey</h1>
+  <p id="description">Please fill the form.</p>
+  <form action="" id="survey-form">
+    <label for="name" id="name-label">
+      Name
+      <input type="text" id="name" placeholder="Enter your name..." required />
+    </label>
+    <label for="email" id="email-label">
+      Email
+      <input type="email" id="email" placeholder="Enter your email..." required />
+    </label>
+    <label for="number" id="number-label">
+      Age
+      <input type="number" id="number" placeholder="How old are you?" min="17" max="45" />
+    </label>
+
+    <label for="dropdown" id="dropdown-label">
+      How do you know Inter Milan?
+      <select name="dropdown" id="dropdown">
+        <option>Friends</option>
+        <option>Community</option>
+        <option>Fan Page</option>
+      </select>
+    </label>
+
+    <label for="member" id="member-label">Please choose your favourite players.</label>
+
+    <input type="radio" name="member" value="1" checked />Samir Handanovic<br />
+    <input type="radio" name="member" value="2" />Stefan de Vrijc<br />
+    <input type="radio" name="member" value="3" />Andrea Ranocchia<br />
+    <input type="radio" name="member" value="4" />Allesandro Bastoni<br />
+    <input type="radio" name="member" value="5" />Nicolo Barella<br />
+    <input type="radio" name="member" value="6" />Achraf Hakimi<br />
+    <input type="radio" name="member" value="7" />Marcello Brozovic<br />
+    <input type="radio" name="member" value="8" />Christian Ericksen<br />
+    <input type="radio" name="member" value="9" />Arthuro Vidal<br />
+    <input type="radio" name="member" value="10" />Lautaro Martinez<br />
+    <input type="radio" name="member" value="11" />Romelo Lukaku<br />
+    
+    <br /> <br />
+    <label for="managers" id="managers">Please choose your favourite Managers</label>
+
+    <input type="checkbox" value="Antonio Conte" />Antonio Conte <br />
+    <input type="checkbox" value="Luciano Spalletti" />Luciano Spalletti <br />
+    <input type="checkbox" value="Roberto Mancini" />Roberto Mancini <br />
+    <input type="checkbox" value="José Mourinho" />José Mourinho <br />
+    <br /><br />
+
+    <label for="comments" id="comments-label">
+      Any comments or suggestions?
+      <textarea id="comments" cols="30" rows="10"></textarea>
+    </label>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
